@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <script src="classes/cell.js"></script>
+  <script src="classes/maze.js"></script>
+  <script src="classes/astar.js"></script>
+  <script src="sketch.js"></script>
+  
+  <div class="mb-3 mt-5 flex justify-center items-center">
+    <button id="easyBtn" class="bg-green-400 hover:bg-green-500 text-gray-800 font-bold py-2 px-4 rounded-l">Easy</button>
+      <button id="medBtn" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4">Medium</button>
+    <button id="hardBtn" class="bg-red-400 hover:bg-red-500 text-gray-800 font-bold py-2 px-4 rounded-r">Insane</button>
+  </div>
+  <div id="canvasArea" class="mb-4 mt-5"></div>
+  <div class="flex mb-4">
+    <div class="flex w-1/2 justify-end mr-5">
+      <button id="resetBtn" class="bg-orange-600 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded">Reset Game</button>
+    </div>
+    <div class="flex w-1/2 justify-start">
+      <button id="pauseBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">Pause</button>
+      <button id="resumeBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">Resume</button>
+    </div>
+  </div>
+
+
+</body></html>
